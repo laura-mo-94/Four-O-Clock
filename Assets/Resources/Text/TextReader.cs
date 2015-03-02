@@ -22,8 +22,6 @@ public static class TextReader
 			textList.Add(line);
 			line=reader.ReadLine ();
 		}
-
-		Debug.Log (text);
 		return textList;
 	}
 	

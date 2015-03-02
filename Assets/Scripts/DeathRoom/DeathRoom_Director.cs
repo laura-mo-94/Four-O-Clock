@@ -1,24 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
-public class DeathRoom_Director : MonoBehaviour {
+using UnityEngine.UI;
+public class DeathRoom_Director : Director {
 
 	public GameObject drawer;
 	public GameObject picture;
-
-	public int interactCount;
+	public GameObject door;
+	public GameObject clock;
+	
 	List<GameObject> changingObjects = new List<GameObject>();
-
+	AudioSource clockSound;
 	bool allCompleted;
 	GameObject player;
-	public bool end;
+
+	public Text text; 
+
+	public int discovered;
+	float time = 0f;
 	// Use this for initialization
 	void Start () 
 	{
 		changingObjects.Add(drawer);
 		changingObjects.Add (picture);
 		player = GameObject.Find ("Player");
+		clockSound = clock.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -31,14 +37,14 @@ public class DeathRoom_Director : MonoBehaviour {
 			{
 				if(!(ob.GetComponent<UnseenAction>().completedPhases()))
 				{
-					Debug.Log (ob.name);
 					allCompleted = false;
 				}
 			}
 		}
 
-		if(!allCompleted)
+		if(discoveredCount < 4)
 		{
+			Debug.Log (discoveredCount);
 			if(interactCount >= 2)
 			{
 				changeObject();
@@ -46,11 +52,20 @@ public class DeathRoom_Director : MonoBehaviour {
 			}
 
 		}
-		else
+		else if(text.text == "" && interactCount > 2)
 		{
+			Debug.Log ("DIE");
 			if(!end)
 			{
 				endLevel ();
+			}
+			else
+			{
+				time+=Time.deltaTime;
+				if(time >= 8f)
+				{
+					Application.LoadLevel ("Hallway");
+				}
 			}
 		}
 
@@ -64,7 +79,8 @@ public class DeathRoom_Director : MonoBehaviour {
 		int tries = 0;
 		while(!found && tries < 5)
 		{
-			if(!(changingObjects[ob].renderer.isVisible) && !(changingObjects[ob].GetComponent<UnseenAction>().completedPhases()))
+			UnseenAction temp = changingObjects[ob].GetComponent<UnseenAction>();
+			if(!(changingObjects[ob].renderer.isVisible) && !(temp.completedPhases()) && (temp.observed))
 			{
 				changingObjects[ob].GetComponent<UnseenAction>().action();
 				found = true;
@@ -72,13 +88,17 @@ public class DeathRoom_Director : MonoBehaviour {
 			ob = Random.Range (0, changingObjects.Count);
 			tries++;
 		}
+
 	}
 
 	void endLevel()
 	{
+		clockSound.Play();
 		end = true;
 		drawer.GetComponent<DrawerActions>().action ();
 		player.GetComponent<NavMeshAgent>().enabled = true;
+		door.transform.position = new Vector3(2.48f, 10.44f, 18.22f);
+		door.transform.Rotate(new Vector3(0f, 90f, 0f));
 		player.GetComponent<PlayerMovement>().die();
 	}
 	

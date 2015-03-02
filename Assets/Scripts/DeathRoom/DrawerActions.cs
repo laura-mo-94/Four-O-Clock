@@ -25,7 +25,7 @@ public class DrawerActions : InteractableObject {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(director.GetComponent<DeathRoom_Director>().end)
+		if(directorScript.end)
 		{
 			if(open)
 			{
@@ -47,7 +47,6 @@ public class DrawerActions : InteractableObject {
 
 	public override void action()
 	{
-		Debug.Log (open);
 		if(open)
 		{
 			completingAction = true;

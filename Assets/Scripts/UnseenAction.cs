@@ -6,16 +6,20 @@ public class UnseenAction : MonoBehaviour {
 	public int stages;
 	protected int currentStage = 1;
 	protected bool completed;
-	protected bool observed;
+	public bool observed = false;
+	public Director directorScript;
+
 	// Use this for initialization
-	void Start () {
-	
+	protected void Start () {
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	protected void Update () 
 	{
-	
+		if(renderer.isVisible)
+		{
+			observed = true;
+		}
 	}
 
 	public virtual void action()

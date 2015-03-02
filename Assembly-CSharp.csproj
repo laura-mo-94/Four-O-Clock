@@ -49,14 +49,26 @@
      <Compile Include="Assets\Resources\Text\TextReader.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\ClothActions.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\DeathRoom_Director.cs" />
+     <Compile Include="Assets\Scripts\DeathRoom\DioramaText.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\DoorActions.cs" />
+     <Compile Include="Assets\Scripts\DeathRoom\DoorScript.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\DrawerActions.cs" />
+     <Compile Include="Assets\Scripts\DeathRoom\TruckAction.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\UnseenDrawer.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\UnseenPicture.cs" />
+     <Compile Include="Assets\Scripts\Director.cs" />
+     <Compile Include="Assets\Scripts\Hallway\Director_Hallway.cs" />
+     <Compile Include="Assets\Scripts\Hallway\SwitchAction.cs" />
      <Compile Include="Assets\Scripts\InteractableObject.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\UnseenAction.cs" />
+     <None Include="Assets\Resources\Text\Diorama.txt" />
      <None Include="Assets\Resources\Text\Scream.txt" />
+     <None Include="Assets\Resources\Text\Switch.txt" />
+     <None Include="Assets\Resources\Text\Picture_Frame.txt" />
+     <None Include="Assets\Resources\Text\Truck.txt" />
+     <None Include="Assets\Resources\Text\Brick.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

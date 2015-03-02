@@ -18,14 +18,14 @@ public class DoorActions : InteractableObject {
 		base.Start ();
 		completingAction = false;
 		speed = 5;
-		targetPosition = transform.position + Vector3.right;
+		targetPosition = transform.position + Vector3.right*2f;
 		originalPosition = transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if(director.GetComponent<DeathRoom_Director>().end)
+		if(directorScript.end)
 		{
 			if(open)
 			{

@@ -31,6 +31,7 @@ public class PlayerMovement: MonoBehaviour {
 	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
 	public RotationAxes axes = RotationAxes.MouseXAndY;
 	public Camera camera;
+	AudioSource audio;
 	
 	//CameraFollow cam;
 	Transform target;
@@ -50,6 +51,7 @@ public class PlayerMovement: MonoBehaviour {
 		normal = camera.fieldOfView;
 		minY = -40f;
 		maxY = 20f;
+		audio = GetComponent<AudioSource>();
 	}
 	
 	void FixedUpdate()
@@ -96,6 +98,10 @@ public class PlayerMovement: MonoBehaviour {
 					Move ("right");
 				}
 			}
+			else
+			{
+				audio.Stop ();
+			}
 
 			if(Input.GetMouseButton(0))
 			{
@@ -114,7 +120,6 @@ public class PlayerMovement: MonoBehaviour {
 				Debug.Log ("rebound");
 				Return ();
 			}
-
 		}
 	}
 	
@@ -122,6 +127,10 @@ public class PlayerMovement: MonoBehaviour {
 	{
 		int factor = 0;
 
+		if(!audio.isPlaying)
+		{
+			audio.Play();
+		}
 		if(direction == "up" || direction == "down")
 		{
 			if(direction == "up")

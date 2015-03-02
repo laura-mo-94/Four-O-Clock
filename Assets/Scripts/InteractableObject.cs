@@ -10,26 +10,27 @@ public class InteractableObject : MonoBehaviour {
 	public float timeFactor;
 
 	protected GameObject director;
-	float time;
+	protected float time;
 	GameObject textDisplay;
 	GameObject player;
 
-	bool displayingText;
+	protected bool displayingText;
+	protected Director directorScript;
 	// Use this for initialization
 	protected void Start () {
 		textDisplay = GameObject.Find("Screen Text");
 		player = GameObject.Find ("Player");
 		director = GameObject.Find ("Director");
+		directorScript = director.GetComponent<Director>();
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	protected void Update () 
 	{
-		while(displayingText)
+		if(displayingText)
 		{
-
+			displayText ();
 		}
-	
 	}
 
 	public void displayText()
@@ -60,19 +61,18 @@ public class InteractableObject : MonoBehaviour {
 	void getText()
 	{
 		text = TextReader.getText (textFile);
-
+		displayingText = true;
 	}
 
 	void OnMouseDown()
 	{
 		if(Vector3.Distance(transform.position, player.transform.position) < 5f)
 		{
-			Debug.Log ("IN HERE");
 			if(textFile != null)
 			{
 				getText ();
 			}
-			director.GetComponent<DeathRoom_Director>().interactCount++;
+			director.GetComponent<Director>().interactCount++;
 			action ();
 		}
 	}

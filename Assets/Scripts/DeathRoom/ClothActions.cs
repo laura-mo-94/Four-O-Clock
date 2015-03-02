@@ -15,6 +15,8 @@ public class ClothActions : InteractableObject {
 
 	public override void action()
 	{
+		GameObject.Find ("Diorama").GetComponent<DioramaText>().getText();
+		directorScript.discoveredCount++;
 		GameObject.Destroy(gameObject);
 	}
 }
