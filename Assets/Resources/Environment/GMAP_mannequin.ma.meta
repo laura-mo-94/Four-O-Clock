@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: a08dbb92028de438dafd71c24bc6a774
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube1
@@ -33,6 +33,71 @@ ModelImporter:
     100054: pSphere7
     100056: pSphere8
     100058: pSphere9
+    100060: head
+    100062: Hip
+    100064: HipBall
+    100066: ikHandle1
+    100068: ikHandle2
+    100070: ikHandle3
+    100072: joint10
+    100074: joint11
+    100076: joint12
+    100078: joint13
+    100080: joint14
+    100082: joint15
+    100084: joint16
+    100086: joint17
+    100088: joint18
+    100090: joint19
+    100092: joint2
+    100094: joint20
+    100096: joint21
+    100098: joint22
+    100100: joint23
+    100102: joint24
+    100104: joint25
+    100106: joint3
+    100108: joint4
+    100110: joint5
+    100112: joint6
+    100114: joint7
+    100116: joint8
+    100118: joint9
+    100120: l_ankleBall
+    100122: l_elbowBall
+    100124: l_foot
+    100126: l_hand
+    100128: l_kneeBall
+    100130: l_legHipBall
+    100132: l_lowerArm
+    100134: l_lowerLeg
+    100136: l_shoulderBall
+    100138: l_upperArm
+    100140: l_upperLeg
+    100142: l_wristBall
+    100144: leftArm
+    100146: leftFoot_IK
+    100148: leftLeg
+    100150: leftLeg_IK
+    100152: neckBall
+    100154: r_ankleBall
+    100156: r_elbowBall
+    100158: r_foot
+    100160: r_hand
+    100162: r_kneeBall
+    100164: r_legHipBall
+    100166: r_lowerArm
+    100168: r_lowerLeg
+    100170: r_shoulderBall
+    100172: r_upperArm
+    100174: r_upperLeg
+    100176: r_wristBall
+    100178: rightArm
+    100180: rightFoot_IK
+    100182: rightLeg
+    100184: rightLeg_IK
+    100186: Torso
+    100188: torso
     400000: //RootNode
     400002: pCube1
     400004: pCube2
@@ -63,6 +128,71 @@ ModelImporter:
     400054: pSphere7
     400056: pSphere8
     400058: pSphere9
+    400060: head
+    400062: Hip
+    400064: HipBall
+    400066: ikHandle1
+    400068: ikHandle2
+    400070: ikHandle3
+    400072: joint10
+    400074: joint11
+    400076: joint12
+    400078: joint13
+    400080: joint14
+    400082: joint15
+    400084: joint16
+    400086: joint17
+    400088: joint18
+    400090: joint19
+    400092: joint2
+    400094: joint20
+    400096: joint21
+    400098: joint22
+    400100: joint23
+    400102: joint24
+    400104: joint25
+    400106: joint3
+    400108: joint4
+    400110: joint5
+    400112: joint6
+    400114: joint7
+    400116: joint8
+    400118: joint9
+    400120: l_ankleBall
+    400122: l_elbowBall
+    400124: l_foot
+    400126: l_hand
+    400128: l_kneeBall
+    400130: l_legHipBall
+    400132: l_lowerArm
+    400134: l_lowerLeg
+    400136: l_shoulderBall
+    400138: l_upperArm
+    400140: l_upperLeg
+    400142: l_wristBall
+    400144: leftArm
+    400146: leftFoot_IK
+    400148: leftLeg
+    400150: leftLeg_IK
+    400152: neckBall
+    400154: r_ankleBall
+    400156: r_elbowBall
+    400158: r_foot
+    400160: r_hand
+    400162: r_kneeBall
+    400164: r_legHipBall
+    400166: r_lowerArm
+    400168: r_lowerLeg
+    400170: r_shoulderBall
+    400172: r_upperArm
+    400174: r_upperLeg
+    400176: r_wristBall
+    400178: rightArm
+    400180: rightFoot_IK
+    400182: rightLeg
+    400184: rightLeg_IK
+    400186: Torso
+    400188: torso
     2300000: pCube1
     2300002: pCube2
     2300004: pCube3
@@ -92,6 +222,35 @@ ModelImporter:
     2300052: pSphere7
     2300054: pSphere8
     2300056: pSphere9
+    2300058: head
+    2300060: Hip
+    2300062: HipBall
+    2300064: l_ankleBall
+    2300066: l_elbowBall
+    2300068: l_foot
+    2300070: l_hand
+    2300072: l_kneeBall
+    2300074: l_legHipBall
+    2300076: l_lowerArm
+    2300078: l_lowerLeg
+    2300080: l_shoulderBall
+    2300082: l_upperArm
+    2300084: l_upperLeg
+    2300086: l_wristBall
+    2300088: neckBall
+    2300090: r_ankleBall
+    2300092: r_elbowBall
+    2300094: r_foot
+    2300096: r_hand
+    2300098: r_kneeBall
+    2300100: r_legHipBall
+    2300102: r_lowerArm
+    2300104: r_lowerLeg
+    2300106: r_shoulderBall
+    2300108: r_upperArm
+    2300110: r_upperLeg
+    2300112: r_wristBall
+    2300114: Torso
     3300000: pCube1
     3300002: pCube2
     3300004: pCube3
@@ -121,6 +280,35 @@ ModelImporter:
     3300052: pSphere7
     3300054: pSphere8
     3300056: pSphere9
+    3300058: head
+    3300060: Hip
+    3300062: HipBall
+    3300064: l_ankleBall
+    3300066: l_elbowBall
+    3300068: l_foot
+    3300070: l_hand
+    3300072: l_kneeBall
+    3300074: l_legHipBall
+    3300076: l_lowerArm
+    3300078: l_lowerLeg
+    3300080: l_shoulderBall
+    3300082: l_upperArm
+    3300084: l_upperLeg
+    3300086: l_wristBall
+    3300088: neckBall
+    3300090: r_ankleBall
+    3300092: r_elbowBall
+    3300094: r_foot
+    3300096: r_hand
+    3300098: r_kneeBall
+    3300100: r_legHipBall
+    3300102: r_lowerArm
+    3300104: r_lowerLeg
+    3300106: r_shoulderBall
+    3300108: r_upperArm
+    3300110: r_upperLeg
+    3300112: r_wristBall
+    3300114: Torso
     4300000: pCylinder2
     4300002: pSphere1
     4300004: pSphere3
@@ -150,6 +338,35 @@ ModelImporter:
     4300052: pSphere16
     4300054: pCube4
     4300056: pCube5
+    4300058: Torso
+    4300060: HipBall
+    4300062: Hip
+    4300064: neckBall
+    4300066: head
+    4300068: l_shoulderBall
+    4300070: l_upperArm
+    4300072: l_elbowBall
+    4300074: l_lowerArm
+    4300076: l_wristBall
+    4300078: l_hand
+    4300080: r_shoulderBall
+    4300082: r_upperArm
+    4300084: r_elbowBall
+    4300086: r_lowerArm
+    4300088: r_wristBall
+    4300090: r_hand
+    4300092: l_legHipBall
+    4300094: l_upperLeg
+    4300096: l_kneeBall
+    4300098: l_lowerLeg
+    4300100: l_ankleBall
+    4300102: l_foot
+    4300104: r_legHipBall
+    4300106: r_upperLeg
+    4300108: r_kneeBall
+    4300110: r_lowerLeg
+    4300112: r_ankleBall
+    4300114: r_foot
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -178,11 +395,13 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -205,3 +424,5 @@ ModelImporter:
   animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

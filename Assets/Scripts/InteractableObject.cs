@@ -66,14 +66,14 @@ public class InteractableObject : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		if(Vector3.Distance(transform.position, player.transform.position) < 5f)
+		if(Vector3.Distance(transform.position, player.transform.position) < 10f)
 		{
+			action ();
 			if(textFile != null)
 			{
 				getText ();
 			}
 			director.GetComponent<Director>().interactCount++;
-			action ();
 		}
 	}
 

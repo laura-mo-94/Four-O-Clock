@@ -9,14 +9,20 @@ public class UnseenAction : MonoBehaviour {
 	public bool observed = false;
 	public Director directorScript;
 
+	GameObject player;
+
+	protected Renderer renderer;
 	// Use this for initialization
-	protected void Start () {
+	protected void Start () 
+	{
+		renderer = gameObject.GetComponent<Renderer>();
+		player = GameObject.Find ("Player");
 	}
 	
 	// Update is called once per frame
 	protected void Update () 
 	{
-		if(renderer.isVisible)
+		if(renderer.isVisible && Vector3.Distance(player.transform.position, transform.position) < 10f)
 		{
 			observed = true;
 		}

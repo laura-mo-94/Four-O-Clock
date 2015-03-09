@@ -44,7 +44,6 @@ public class DeathRoom_Director : Director {
 
 		if(discoveredCount < 4)
 		{
-			Debug.Log (discoveredCount);
 			if(interactCount >= 2)
 			{
 				changeObject();
@@ -54,7 +53,6 @@ public class DeathRoom_Director : Director {
 		}
 		else if(text.text == "" && interactCount > 2)
 		{
-			Debug.Log ("DIE");
 			if(!end)
 			{
 				endLevel ();
@@ -64,6 +62,7 @@ public class DeathRoom_Director : Director {
 				time+=Time.deltaTime;
 				if(time >= 8f)
 				{
+					Debug.Log ("load hallway");
 					Application.LoadLevel ("Hallway");
 				}
 			}
@@ -80,7 +79,8 @@ public class DeathRoom_Director : Director {
 		while(!found && tries < 5)
 		{
 			UnseenAction temp = changingObjects[ob].GetComponent<UnseenAction>();
-			if(!(changingObjects[ob].renderer.isVisible) && !(temp.completedPhases()) && (temp.observed))
+
+			if(!(changingObjects[ob].GetComponent<Renderer>().isVisible) && !(temp.completedPhases()) && (temp.observed))
 			{
 				changingObjects[ob].GetComponent<UnseenAction>().action();
 				found = true;

@@ -40,6 +40,7 @@ public class PlayerMovement: MonoBehaviour {
 	Vector3 mousePosition;
 	Vector3 originalPosition;
 	public GameObject mannequin;
+	public bool turning;
 	
 	void Awake()
 	{
@@ -105,7 +106,12 @@ public class PlayerMovement: MonoBehaviour {
 
 			if(Input.GetMouseButton(0))
 			{
+				turning = true;
 				Turning ();
+			}
+			else
+			{
+				turning = false;
 			}
 
 
@@ -117,7 +123,6 @@ public class PlayerMovement: MonoBehaviour {
 			
 			else if(zoomed)
 			{
-				Debug.Log ("rebound");
 				Return ();
 			}
 		}

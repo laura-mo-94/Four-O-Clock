@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A8F2E929-30C0-50F1-491D-822A2A59648A}</ProjectGuid>
+	<ProjectGuid>{1EF978C0-B895-A64C-1440-F88C323523A6}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MovingObject.cs" />
      <Compile Include="Assets\Resources\Text\TextReader.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\ClothActions.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\DeathRoom_Director.cs" />
@@ -57,20 +58,38 @@
      <Compile Include="Assets\Scripts\DeathRoom\UnseenDrawer.cs" />
      <Compile Include="Assets\Scripts\DeathRoom\UnseenPicture.cs" />
      <Compile Include="Assets\Scripts\Director.cs" />
+     <Compile Include="Assets\Scripts\Hallway\ClockSwing.cs" />
      <Compile Include="Assets\Scripts\Hallway\Director_Hallway.cs" />
+     <Compile Include="Assets\Scripts\Hallway\FrameAction.cs" />
+     <Compile Include="Assets\Scripts\Hallway\RadioAction.cs" />
      <Compile Include="Assets\Scripts\Hallway\SwitchAction.cs" />
      <Compile Include="Assets\Scripts\InteractableObject.cs" />
+     <Compile Include="Assets\Scripts\Kitchen\KitchenDirector.cs" />
+     <Compile Include="Assets\Scripts\Kitchen\MaskAction.cs" />
+     <Compile Include="Assets\Scripts\Kitchen\SisterAction.cs" />
+     <Compile Include="Assets\Scripts\MovingAction.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\UnseenAction.cs" />
+     <None Include="Assets\Resources\Text\Sister4.txt" />
      <None Include="Assets\Resources\Text\Diorama.txt" />
+     <None Include="Assets\Resources\Text\Sister5.txt" />
+     <None Include="Assets\Resources\Text\Sister2.txt" />
      <None Include="Assets\Resources\Text\Scream.txt" />
+     <None Include="Assets\Resources\Text\Sister_Death_1.txt" />
+     <None Include="Assets\Resources\Text\Truck_2.txt" />
      <None Include="Assets\Resources\Text\Switch.txt" />
+     <None Include="Assets\Resources\Text\Sister1.txt" />
+     <None Include="Assets\Resources\Text\Chant.txt" />
      <None Include="Assets\Resources\Text\Picture_Frame.txt" />
+     <None Include="Assets\Music\3 Leaf Productions - Audio Pack\rock-wood sfx(mini pack)\ReadMe.txt" />
+     <None Include="Assets\Resources\Text\Sister6.txt" />
+     <None Include="Assets\Resources\Text\Brick_2.txt" />
      <None Include="Assets\Resources\Text\Truck.txt" />
      <None Include="Assets\Resources\Text\Brick.txt" />
+     <None Include="Assets\Resources\Text\Sister3.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

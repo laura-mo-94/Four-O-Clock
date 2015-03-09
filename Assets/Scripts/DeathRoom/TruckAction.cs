@@ -4,6 +4,9 @@ using System.Collections;
 public class TruckAction : InteractableObject {
 
 	// Use this for initialization
+
+	public bool discoverable;
+	public bool discovered = false;
 	void Start () {
 		base.Start ();
 	}
@@ -15,7 +18,14 @@ public class TruckAction : InteractableObject {
 
 	public override void action()
 	{
-
-		directorScript.discoveredCount++;
-	}
+		if(!discovered && discoverable)
+		{
+			directorScript.discoveredCount++;
+			discovered = true;
+		}
+		else if(!discovered)
+		{
+			discovered = true;
+		}
+	}		
 }

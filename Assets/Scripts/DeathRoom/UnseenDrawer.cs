@@ -8,6 +8,7 @@ public class UnseenDrawer : UnseenAction {
 	public UnseenPicture pic;
 	// Use this for initialization
 	void Start () {
+		base.Start ();
 		targetPosition = transform.position + Vector3.right;
 		originalPosition = transform.position;
 	}

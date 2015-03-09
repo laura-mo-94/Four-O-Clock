@@ -5,6 +5,7 @@ public class UnseenPicture : UnseenAction {
 
 	public Material second;
 	bool marked;
+	
 	// Use this for initialization
 	void Start () {
 		base.Start ();

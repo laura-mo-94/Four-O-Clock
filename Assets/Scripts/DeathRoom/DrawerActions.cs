@@ -6,6 +6,7 @@ public class DrawerActions : InteractableObject {
 	// Use this for initialization
 	public bool open;
 	public float directionFactor = 1;
+	public string direction;
 	bool completingAction;
 
 	float speed;
@@ -19,6 +20,16 @@ public class DrawerActions : InteractableObject {
 		completingAction = false;
 		speed = 5;
 		targetPosition = transform.position + Vector3.right * directionFactor;
+
+		if(direction == "yAxis")
+		{
+			targetPosition = transform.position + Vector3.up * directionFactor;
+		}
+		else if(direction == "xAxis")
+		{
+			targetPosition = transform.position + Vector3.forward * directionFactor;
+		}
+
 		originalPosition = transform.position;
 	}
 	
