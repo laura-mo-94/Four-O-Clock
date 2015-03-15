@@ -1,0 +1,7 @@
+"...."
+"......."
+"....killed"
+"You killed him."
+"You killed him. You killed him."
+"You killed him. You killed him. You killed him."
+

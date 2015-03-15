@@ -67,18 +67,26 @@
      <Compile Include="Assets\Scripts\Kitchen\KitchenDirector.cs" />
      <Compile Include="Assets\Scripts\Kitchen\MaskAction.cs" />
      <Compile Include="Assets\Scripts\Kitchen\SisterAction.cs" />
+     <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\MovingAction.cs" />
+     <Compile Include="Assets\Scripts\OpeningDirector.cs" />
+     <Compile Include="Assets\Scripts\OutsideDirector.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\TitleCard.cs" />
      <Compile Include="Assets\Scripts\UnseenAction.cs" />
      <None Include="Assets\Resources\Text\Sister4.txt" />
      <None Include="Assets\Resources\Text\Diorama.txt" />
+     <None Include="Assets\Resources\Text\Children 2.txt" />
      <None Include="Assets\Resources\Text\Sister5.txt" />
      <None Include="Assets\Resources\Text\Sister2.txt" />
+     <None Include="Assets\Resources\Text\Children 1.txt" />
      <None Include="Assets\Resources\Text\Scream.txt" />
+     <None Include="Assets\Resources\Text\Children 3.txt" />
      <None Include="Assets\Resources\Text\Sister_Death_1.txt" />
      <None Include="Assets\Resources\Text\Truck_2.txt" />
      <None Include="Assets\Resources\Text\Switch.txt" />
+     <None Include="Assets\Resources\Text\Children 4.txt" />
      <None Include="Assets\Resources\Text\Sister1.txt" />
      <None Include="Assets\Resources\Text\Chant.txt" />
      <None Include="Assets\Resources\Text\Picture_Frame.txt" />
@@ -87,6 +95,7 @@
      <None Include="Assets\Resources\Text\Brick_2.txt" />
      <None Include="Assets\Resources\Text\Truck.txt" />
      <None Include="Assets\Resources\Text\Brick.txt" />
+     <None Include="Assets\Resources\Text\Butcher.txt" />
      <None Include="Assets\Resources\Text\Sister3.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -1,17 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Hallway/Director_Hallway.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OpeningDirector.cs">
     <Files>
-      <File FileName="Assets/Scripts/Kitchen/SisterAction.cs" Line="51" Column="32" />
-      <File FileName="Assets/Scripts/DeathRoom/DeathRoom_Director.cs" Line="93" Column="1" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="125" Column="5" />
-      <File FileName="Assets/Scripts/DeathRoom/TruckAction.cs" Line="9" Column="33" />
-      <File FileName="Assets/Scripts/DeathRoom/UnseenPicture.cs" Line="23" Column="4" />
-      <File FileName="Assets/Scripts/Hallway/Director_Hallway.cs" Line="29" Column="3" />
-      <File FileName="Assets/Resources/Text/Switch.txt" Line="3" Column="28" />
-      <File FileName="Assets/Scripts/Hallway/SwitchAction.cs" Line="25" Column="28" />
+      <File FileName="Assets/Scripts/OutsideDirector.cs" Line="140" Column="4" />
+      <File FileName="Assets/Resources/Text/Butcher.txt" Line="1" Column="1" />
       <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Hallway/FrameAction.cs" Line="28" Column="67" />
+      <File FileName="Assets/Resources/Text/Children 4.txt" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/OpeningDirector.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
